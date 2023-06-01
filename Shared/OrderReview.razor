@@ -4,13 +4,13 @@
         <strong>
             @(pizza.Size)"
             @pizza.Special.Name
-            (£@pizza.GetFormattedTotalPrice())
+            <span style="color: red">(£@pizza.GetFormattedTotalPrice())</span>
         </strong>
     </p>
 }
 
 <p>
-    <strong>
+    <strong style="color: red">
         Total price:
         £@Order.GetFormattedTotalPrice()
     </strong>
